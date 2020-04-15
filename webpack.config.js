@@ -9,7 +9,8 @@ module.exports = {
 		js		: './src/index.js',
 		vanilla	: './src/hello_vanilla.js',
 		react	: './src/hello_react.js',
-		vue		: './src/hello_vue.js'
+		vue		: './src/hello_vue.js',
+		ts		: './src/hello_ts.js'
 	},
 	output: {
 		filename: '[name].[chunkhash].js'
@@ -122,6 +123,17 @@ module.exports = {
 			template: './src/template.html',
 			filename: 'hello-vue.html',
 			chunks: ['vue'],
+			minify: {
+				html5: true,
+				collapseWhitespace: true,
+				caseSensitive: true,
+				removeComments: true
+			}
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/template.html',
+			filename: 'hello-ts.html',
+			chunks: ['ts'],
 			minify: {
 				html5: true,
 				collapseWhitespace: true,

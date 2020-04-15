@@ -3,11 +3,12 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"homepage": "https://kikeestrada.github.io/portfolio-webpack-boilerplate/",
 	"scripts": {
 		"start": "webpack-dev-server --mode development --open",
 		"dev": "webpack --mode development",
 		"build": "webpack --mode production",
-		"deploy": "gh-pages -d public"
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
@@ -18,7 +19,6 @@
 	"bugs": {
 		"url": "https://github.com/kikeestrada/portfolio-webpack-boilerplate/issues"
 	},
-	"homepage": "https://github.com/kikeestrada/portfolio-webpack-boilerplate#readme",
 	"devDependencies": {
 		"autoprefixer": "^8.6.5",
 		"babel-core": "^6.26.3",
