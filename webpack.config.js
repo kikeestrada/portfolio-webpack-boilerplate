@@ -84,6 +84,7 @@ module.exports = {
 			filename: '[name].[chunkhash].css',
 			chunkFilename: '[id].css'
 		}),
+		new VueLoaderPlugin(),
 		new HtmlWebpackPlugin({
 			template: './src/template.html',
 			filename: 'index.html',
