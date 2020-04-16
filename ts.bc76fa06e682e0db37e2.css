@@ -21,6 +21,7 @@ html {
 
 img {
   display: block;
+  width: 100%;
   max-width: 300px;
   height: auto;
 }
@@ -38,16 +39,19 @@ img {
   margin: 2rem auto;
 }
 
-.Menu {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .Menu a {
   color: #8DD6FB;
-  transition: all .3s ease;
+  display: block;
+  margin: 10px 0 !important;
+}
+
+@media only screen and (min-width: 640px) {
+  .Menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 
 
-/*# sourceMappingURL=react.6ff1aafd364eeb45d4e4.css.map*/
+/*# sourceMappingURL=ts.bc76fa06e682e0db37e2.css.map*/
