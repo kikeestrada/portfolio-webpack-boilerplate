@@ -15,7 +15,7 @@ let 	menu  	= '';
 data.links.forEach(link => menu += `<a href="${link[1]}">${link[0]}</a>`);
 
 
-h1.textContent 	= `Webpack + ${hello}`;
+h1.textContent 	= `Webpack + Vanilla JS`;
 p.textContent 	= hello.greet(hello);
 img.src 		= logo;
 nav.classList.add('Menu');

@@ -21,6 +21,7 @@ html{
 }
 img{
 	display: block;
+	width: 100%;
 	max-width: 300px;
 	height: auto;
 }
@@ -38,13 +39,15 @@ img{
 }
 
 .Menu{
-	display: flex;
-	justify-content: space-evenly;
+	
 	a{
-		color: #8DD6FB;
-		transition: all .3s ease;
-		&:hover{
-
-		}
+		color: #8DD6FB;		
+		display: block;
+		margin: 10px 0 !important;
+	}
+	
+	@media only screen and (min-width: 640px) {
+		display: flex;
+		justify-content: space-evenly;
 	}
 }
